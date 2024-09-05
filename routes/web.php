@@ -14,7 +14,6 @@ Route::get("/registration", [AuthController::class, "registration"])->name('regi
 Route::post("/registration", [AuthController::class, "registrationPost"])->name('registration.post');
 Route::get("/logout", [AuthController::class, "logout"])->name('logout');
 
-
 Route::get("/diary", [DiaryController::class, "diary"])->name('diary');
 Route::post("/diary", [DiaryController::class, "diaryPost"])->name('diary.post');
 Route::get("/diary/{notion}/edit", [DiaryController::class, "edit"])->name('layout.edit');
